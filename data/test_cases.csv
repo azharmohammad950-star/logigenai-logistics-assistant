@@ -1,0 +1,6 @@
+ID,Module,Input,Expected Output,Pass Criteria
+TC01,Shipment analysis,LCL export; Ahmedabad to Barcelona; machinery; missed cutoff,Summary + risk + issues + actions,No invented schedule; operationally relevant actions
+TC02,Documentation,LCL export,Verification checklist,No unsupported legal certainty
+TC03,Exception,Missed consolidation cutoff,Possible causes + actions + escalation,Causes framed as possibilities
+TC04,Email,Same exception,Customer communication,No unconfirmed promises
+TC05,Missing information,Only shipment type,Assumptions/verification needs,No fabricated shipment facts
