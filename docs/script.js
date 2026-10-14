@@ -1,6 +1,6 @@
 'use strict';
 
-// Static GitHub Pages implementation of LogiGenAI's deterministic Demo Mode.
+// Static GitHub Pages implementation of logiMitra's deterministic Demo Mode.
 // Response structures and task logic mirror the existing Flask prototype.
 
 const PRESETS = [
@@ -163,7 +163,7 @@ function listSection(title, items, ordered = true) {
 
 function renderResult(result, task) {
   if (task === 'evaluation') {
-    resultSubtitle.textContent = 'Original LogiGenAI prototype evaluation criteria.';
+    resultSubtitle.textContent = 'logiMitra prototype evaluation criteria.';
     const rows = result.criteria.map((row) => `<div class="evaluation-output-row"><div><b>${escapeHtml(row[0])}</b><small>${escapeHtml(row[2])}</small></div><span class="criteria-result ${row[1] === 'Required' ? 'required' : ''}">${escapeHtml(row[1].toUpperCase())}</span></div>`).join('');
     output.innerHTML = `${rows}<div class="warning-box">${escapeHtml(result.note)}</div>`;
     return;

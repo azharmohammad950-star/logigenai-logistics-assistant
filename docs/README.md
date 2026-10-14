@@ -1,6 +1,6 @@
-# LogiGenAI — GitHub Pages Interface
+# logiMitra — GitHub Pages Interface
 
-This `docs/` folder publishes the LogiGenAI logistics operations assistant on GitHub Pages.
+This `docs/` folder publishes logiMitra, an AI copilot for logistics professionals, on GitHub Pages.
 
 ## Included prototype workflows
 
@@ -20,9 +20,13 @@ The four quick scenarios and deterministic response structures mirror the existi
 - The document checklist is an operational prompt, not legal or customs advice.
 - The existing Flask app remains available at https://logigenai-logistics-assistant.onrender.com.
 
+## Contact details
+
+The contact section includes `hello@logimitra.example` as a reserved demonstration placeholder. It is not a working or monitored mailbox. Replace it with a real address before production use.
+
 ## Files
 
-- `index.html` — full LogiGenAI experience and interactive workspace
+- `index.html` — full logiMitra experience and interactive workspace
 - `style.css` — responsive dark-ink, lime and violet visual theme
 - `script.js` — local demo response engine and interface behavior
 - `.nojekyll` — ensures GitHub Pages serves the static files as expected
