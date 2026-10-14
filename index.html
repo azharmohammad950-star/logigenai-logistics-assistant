@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17192a">
+  <meta name="description" content="logiMitra is an AI copilot for logistics professionals, supporting shipment analysis, documentation checks, exception management and customer email drafting.">
+  <title>logiMitra | An AI Copilot for Logistics Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to the logiMitra workspace</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="logiMitra home">
+      <span class="brand-mark" aria-hidden="true"><span>LM</span><i>✳</i></span>
+      <span class="brand-copy"><strong>logiMitra</strong><small>An AI copilot for logistics professionals</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#workspace">Assistant</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#safeguards">Safeguards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span class="mode-pill"><span class="pulse-dot"></span> DEMO MODE</span>
+      <a class="header-link" href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Open Flask prototype <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> LOGISTICS AI COPILOT · OPERATIONS PROTOTYPE</div>
+        <h1>From shipment exception<br>to <em>the next clear action.</em></h1>
+        <p class="hero-lead">An AI copilot for logistics professionals: logiMitra helps structure shipment analysis, documentation checks, exception handling and customer email drafts using the details you provide.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#workspace">Try the assistant <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-secondary" href="#workflow">Explore the workflow</a>
+        </div>
+        <div class="hero-footnote"><span class="shield-icon" aria-hidden="true">✓</span> Operational decision support. Human verification remains essential.</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a shipment exception being converted into a structured action plan">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-kicker"><span class="tiny-square"></span> EXCEPTION → ACTION</div>
+        <div class="visual-card visual-input">
+          <div class="visual-card-head"><span class="mini-icon">↗</span><span>INPUT SCENARIO</span><span class="visual-tag">FCL EXPORT</span></div>
+          <b>Documentation received after cutoff</b>
+          <div class="visual-route"><span>Mundra</span><i>········→</i><span>Rotterdam</span></div>
+        </div>
+        <div class="connector"><span>AI / DEMO ENGINE</span><i></i><b>✳</b><i></i></div>
+        <div class="visual-card visual-output">
+          <div class="visual-card-head"><span class="mini-icon mini-lime">✓</span><span>STRUCTURED RESPONSE</span><span class="status-label">READY TO REVIEW</span></div>
+          <div class="output-line"><span class="line-number">01</span><span>Confirm the missed milestone</span></div>
+          <div class="output-line"><span class="line-number">02</span><span>Verify document and cargo status</span></div>
+          <div class="output-line"><span class="line-number">03</span><span>Confirm the next feasible movement</span></div>
+          <div class="visual-note"><span>!</span> Verify operational facts before acting.</div>
+        </div>
+        <div class="visual-stamp"><span>LOGISTICS</span><b>INTELLIGENCE</b><small>MADE ACTIONABLE</small></div>
+      </div>
+    </section>
+
+    <section class="metric-strip section-wrap" id="overview" aria-label="Prototype capability overview">
+      <div class="metric-intro"><span class="section-index">01 / OVERVIEW</span><h2>Built around the<br>work, not the noise.</h2><p>Core functions from the logiMitra prototype, not freight-forwarding service listings.</p></div>
+      <div class="metrics-grid">
+        <article class="metric-card"><div class="metric-symbol">↗</div><strong>4</strong><span>Operational modules</span><small>Analysis · Docs · Exceptions · Email</small></article>
+        <article class="metric-card"><div class="metric-symbol">▤</div><strong>4</strong><span>Ready-made scenarios</span><small>Import and export examples</small></article>
+        <article class="metric-card"><div class="metric-symbol">✓</div><strong>5</strong><span>Evaluation criteria</span><small>Includes human verification</small></article>
+        <article class="metric-card metric-mode"><div class="metric-symbol">✳</div><strong>Demo</strong><span>Response engine</span><small>Simulated outputs · no API charge</small></article>
+      </div>
+    </section>
+
+    <section class="workspace-section section-wrap" id="workspace">
+      <div class="section-heading">
+        <div><span class="section-index">02 / ASSISTANT WORKSPACE</span><h2>Give the situation. Get a structured response.</h2></div>
+        <div class="workspace-hint"><span class="pulse-dot"></span> Your inputs stay in this browser demo.</div>
+      </div>
+      <div class="scenario-panel panel">
+        <div class="scenario-panel-title"><div><span class="panel-step">A</span><div><h3>Quick scenarios</h3><p>Load a classroom demonstration case.</p></div></div><button class="btn-text" id="clearBtn" type="button">Clear fields ↺</button></div>
+        <div class="scenario-grid">
+          <button class="scenario-card" type="button" data-preset="0"><span class="scenario-number">SCENARIO 01</span><strong>Mundra <i>→</i> Rotterdam</strong><small>FCL Export · Automotive Parts</small><span class="scenario-issue">Documentation cutoff</span></button>
+          <button class="scenario-card" type="button" data-preset="1"><span class="scenario-number">SCENARIO 02</span><strong>Nhava Sheva <i>→</i> Hamburg</strong><small>LCL Export · Textile Samples</small><span class="scenario-issue">Missed consolidation cutoff</span></button>
+          <button class="scenario-card" type="button" data-preset="2"><span class="scenario-number">SCENARIO 03</span><strong>Jebel Ali <i>→</i> Mundra</strong><small>FCL Import · Industrial Machinery</small><span class="scenario-issue">Arrival delay</span></button>
+          <button class="scenario-card" type="button" data-preset="3"><span class="scenario-number">SCENARIO 04</span><strong>Singapore <i>→</i> Chennai</strong><small>LCL Import · Electronic Components</small><span class="scenario-issue">Incomplete documents</span></button>
+        </div>
+      </div>
+
+      <div class="workspace-grid">
+        <section class="panel input-panel" aria-labelledby="shipment-form-title">
+          <div class="panel-title"><div class="panel-icon">01</div><div><h3 id="shipment-form-title">Shipment information</h3><p>Enter or edit the operational scenario.</p></div><span class="ready-chip"><span></span> READY</span></div>
+          <form id="shipmentForm">
+            <label for="shipment_type">Shipment type<select id="shipment_type" name="shipment_type"><option>FCL Export</option><option>LCL Export</option><option>FCL Import</option><option>LCL Import</option></select></label>
+            <div class="form-two">
+              <label for="pol">Port of loading (POL)<input id="pol" name="pol" value="Mundra" placeholder="e.g., Mundra" autocomplete="off"></label>
+              <label for="pod">Port of discharge (POD)<input id="pod" name="pod" value="Rotterdam" placeholder="e.g., Rotterdam" autocomplete="off"></label>
+            </div>
+            <label for="cargo">Cargo description<input id="cargo" name="cargo" value="Automotive Parts" placeholder="Describe the cargo" autocomplete="off"></label>
+            <div class="form-two">
+              <label for="weight">Weight<input id="weight" name="weight" value="18000 kg" placeholder="e.g., 18000 kg" autocomplete="off"></label>
+              <label for="cbm">Volume (CBM)<input id="cbm" name="cbm" value="32" placeholder="e.g., 32" inputmode="decimal" autocomplete="off"></label>
+            </div>
+            <label for="issue">Current issue<textarea id="issue" name="issue" rows="3" placeholder="Describe the exception or concern">Documentation received after cutoff</textarea></label>
+            <div class="module-label"><span class="panel-step">B</span><div><b>Choose a task</b><small>Run one module using the supplied information.</small></div></div>
+            <div class="task-buttons">
+              <button class="task-button" type="button" data-task="shipment"><span class="task-icon">↗</span><span><b>Analyze shipment</b><small>Summary, risks and next actions</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="docs"><span class="task-icon">▤</span><span><b>Documentation checks</b><small>Review a practical checklist</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="exception"><span class="task-icon">⚑</span><span><b>Exception assistant</b><small>Causes, recovery and escalation</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="email"><span class="task-icon">✉</span><span><b>Generate customer email</b><small>Neutral, professional wording</small></span><i>→</i></button>
+            </div>
+            <p class="form-footnote">This GitHub Pages version runs a deterministic demo engine. For the existing Flask application, use <a href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Open existing Flask prototype ↗</a>.</p>
+          </form>
+        </section>
+
+        <section class="panel result-panel" aria-labelledby="result-title" aria-live="polite">
+          <div class="result-head"><div class="panel-title"><div class="panel-icon panel-icon-lime">02</div><div><h3 id="result-title">Structured output</h3><p id="resultSubtitle">Choose a task to generate a response.</p></div></div><span class="result-mode" id="resultMode">WAITING</span></div>
+          <div id="output" class="output-body">
+            <div class="empty-state"><div class="empty-graphic"><span>✳</span></div><h4>Your analysis starts here.</h4><p>Select one of the four modules to see a structured response based on the scenario on the left.</p><div class="empty-points"><span>✓ Operational context</span><span>✓ Action-oriented output</span><span>✓ Verification prompts</span></div></div>
+          </div>
+          <div class="result-disclaimer"><span>!</span><p><b>Review before use.</b> Outputs are decision support, not confirmation of live shipment facts, schedules or legal requirements.</p></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="capabilities-section section-wrap" id="capabilities">
+      <div class="section-heading"><div><span class="section-index">03 / CAPABILITY MAP</span><h2>One input. Four operational workflows.</h2></div><p class="section-side-copy">This map describes features available in the prototype — it is not an accuracy score or live logistics performance dashboard.</p></div>
+      <div class="capability-layout panel">
+        <div class="capability-intro"><span class="capability-mark">✳</span><h3>Designed for exception-aware operations.</h3><p>Each module has a defined output, while unknown shipment facts remain items to verify instead of being invented.</p><a href="#workspace" class="inline-link">Open the assistant <span>↗</span></a></div>
+        <div class="capability-chart" role="img" aria-label="The prototype contains four available operational modules: shipment analysis, documentation checks, exception management and customer email drafting.">
+          <div class="chart-head"><b>Operational module availability</b><span>PROTOTYPE SCOPE</span></div>
+          <div class="bar-row"><div><span>Shipment analysis</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Documentation checks</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Exception management</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Customer email drafting</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="chart-footnote"><span>●</span> Feature availability only — no accuracy or productivity claim is implied.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow-section section-wrap" id="workflow">
+      <div class="section-heading"><div><span class="section-index">04 / SYSTEM WORKFLOW</span><h2>Structured by design. Reviewed by a person.</h2></div></div>
+      <div class="workflow-steps">
+        <article class="workflow-step"><span class="workflow-num">01</span><div class="workflow-icon">⌨</div><h3>User input</h3><p>Shipment type, route, cargo, weight, volume and current issue.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step"><span class="workflow-num">02</span><div class="workflow-icon">▤</div><h3>Data structuring</h3><p>The scenario is organized for the selected logistics task.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step"><span class="workflow-num">03</span><div class="workflow-icon">✳</div><h3>Task engine</h3><p>A task-specific response is built by the demo engine.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step workflow-step-final"><span class="workflow-num">04</span><div class="workflow-icon">✓</div><h3>Human review</h3><p>Verify facts, confirm operational options and approve communications.</p></article>
+      </div>
+    </section>
+
+    <section class="evaluation-section section-wrap" id="evaluation">
+      <div class="section-heading"><div><span class="section-index">05 / QUALITY REVIEW</span><h2>Check the output before trusting it.</h2><p class="section-lead">Run the original prototype evaluation rubric to review how the response is intended to behave.</p></div><button class="btn btn-dark" id="evalBtn" type="button">Run evaluation <span aria-hidden="true">→</span></button></div>
+      <div class="evaluation-layout">
+        <div class="evaluation-list panel" id="evaluationOutput">
+          <div class="evaluation-static-row"><span class="evaluation-check">01</span><div><b>Factuality</b><small>Uses user-entered shipment facts and avoids invented schedules.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">02</span><div><b>Relevance</b><small>Output stays focused on logistics operations.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">03</span><div><b>Completeness</b><small>Task-specific output contains the expected sections.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">04</span><div><b>Assumption control</b><small>Unknown carrier or customs details are flagged for verification.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">05</span><div><b>Human verification</b><small>An operator must validate the output before operational use.</small></div><span class="criteria-label criteria-human">REQUIRED</span></div>
+        </div>
+        <aside class="evaluation-aside"><span class="aside-eyebrow">EVALUATION NOTE</span><h3>A rubric, not a benchmark.</h3><p>The criteria describe what should be reviewed. They do not represent a statistically measured accuracy rate or proof of operational performance.</p><div class="eval-badge"><span>✓</span> <div><b>Human check remains mandatory</b><small>Especially for carrier schedules, rates, customs, contracts and cargo status.</small></div></div></aside>
+      </div>
+    </section>
+
+    <section class="safeguards-section section-wrap" id="safeguards">
+      <div class="safeguard-banner"><div class="safeguard-icon">!</div><div><span class="section-index">06 / SCOPE & SAFEGUARDS</span><h2>Useful assistance. No invented certainty.</h2><p>logiMitra is an academic decision-support prototype. Its demonstration outputs are simulated and must not be treated as verified operational advice.</p></div></div>
+      <div class="safeguard-grid">
+        <article><span>01</span><h3>Use supplied facts</h3><p>Outputs are grounded in scenario details entered by the user. Missing information should be checked, not assumed.</p></article>
+        <article><span>02</span><h3>Verify documents and rules</h3><p>The documentation list is an operational prompt, not a definitive legal, customs or regulatory checklist.</p></article>
+        <article><span>03</span><h3>Confirm before communicating</h3><p>Check live shipment milestones, carrier availability, contractual commitments and customer-specific requirements before action.</p></article>
+      </div>
+    </section>
+
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-intro">
+        <span class="section-index">07 / CONTACT</span>
+        <h2>Let's make logistics decisions clearer.</h2>
+        <p>Questions, feedback or ideas for improving the assistant? Use the contact address below or explore the project source.</p>
+      </div>
+      <div class="contact-card panel">
+        <div class="contact-card-icon" aria-hidden="true">✉</div>
+        <div class="contact-card-copy">
+          <span class="contact-label">PROJECT ENQUIRIES</span>
+          <h3>Contact the logiMitra team</h3>
+          <a class="contact-email" href="mailto:hello@logimitra.example?subject=Enquiry%20for%20logiMitra">hello@logimitra.example</a>
+          <p class="contact-note">Demo email placeholder only. This address is not monitored and cannot receive real enquiries; replace it with a real inbox before production use.</p>
+        </div>
+        <a class="btn btn-primary contact-button" href="mailto:hello@logimitra.example?subject=Enquiry%20for%20logiMitra">Email the team <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/azharmohammad950-star/logigenai-logistics-assistant" target="_blank" rel="noopener">Explore the GitHub repository <span aria-hidden="true">↗</span></a>
+        <a href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Open the existing Flask prototype <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><span>LM</span><i>✳</i></span><span class="brand-copy"><strong>logiMitra</strong><small>An AI copilot for logistics professionals</small></span></a>
+    <p>An AI Copilot for Logistics Professionals · Academic prototype · Demo outputs are simulated</p>
+    <div><a href="#contact">Contact</a><a href="https://github.com/azharmohammad950-star/logigenai-logistics-assistant" target="_blank" rel="noopener">GitHub repository ↗</a><a href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Flask prototype ↗</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
