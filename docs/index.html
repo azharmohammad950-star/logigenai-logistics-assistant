@@ -1,151 +1,183 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Moventra Logistics — local delivery services, shipment visibility and exception recovery for businesses.">
-<meta name="theme-color" content="#102a43">
-<title>Moventra Logistics | Deliver with confidence</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17192a">
+  <meta name="description" content="LogiGenAI is an academic logistics operations assistant for shipment analysis, documentation checks, exception management and customer email drafting.">
+  <title>LogiGenAI | Logistics Operations Assistant</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
- <div class="nav-wrap">
-  <a class="brand" href="#home" aria-label="Moventra Logistics home">
-   <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 31.5 18.6 10l7.2 13.2 4.5-8.1L41 36H18.4l4.2-7.6-4.1-7.5-6.1 10.6Z" fill="currentColor"/><path d="M8 38h31" stroke="#58d6c0" stroke-width="3.2" stroke-linecap="round"/></svg></span>
-   <span class="brand-text"><strong>MOVENTRA</strong><small>LOGISTICS & DELIVERY</small></span>
-  </a>
-  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
-  <nav id="primaryNav" class="primary-nav" aria-label="Main navigation">
-   <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#dashboard">Dashboard</a><a href="#logigenai">LogiGenAI</a><a class="nav-cta" href="#contact">Enquire <span>↗</span></a>
-  </nav>
- </div>
-</header>
-<main id="main">
-<section id="home" class="hero anchor">
- <div class="hero-grid">
-  <div class="hero-copy">
-   <p class="eyebrow"><span class="pulse"></span> LOCAL LOGISTICS. BETTER VISIBILITY.</p>
-   <h1>Move every delivery forward.<em> Even when plans change.</em></h1>
-   <p class="hero-lede">Moventra helps businesses coordinate local deliveries, monitor shipment progress and respond to exceptions with clear next steps.</p>
-   <div class="hero-actions"><a class="button primary" href="#dashboard">Explore operations <span>→</span></a><a class="button quiet" href="#services">View services</a></div>
-   <div class="hero-proof"><span class="check">✓</span><p><strong>Visibility for your team.</strong><br><span>Clear status, practical action, better communication.</span></p></div>
-  </div>
-  <div class="hero-visual">
-   <div class="visual-topline"><span>DELIVERY NETWORK</span><i class="live-dot"></i><span>SAMPLE VIEW</span></div>
-   <svg class="route-map" viewBox="0 0 550 390" role="img" aria-label="Illustrated route connecting pickup, transfer hub and delivery point">
-    <defs><pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#3b5870" opacity=".65"/></pattern><linearGradient id="routeGrad"><stop stop-color="#5ddbc7"/><stop offset="1" stop-color="#5ca6df"/></linearGradient></defs>
-    <rect width="550" height="390" rx="20" fill="url(#dots)"/>
-    <path d="M42 320C120 270 85 188 175 172S262 227 330 157 400 90 505 35" fill="none" stroke="#365269" stroke-width="2" stroke-dasharray="5 9"/>
-    <path d="M54 303C120 255 94 193 178 174S263 219 331 151 405 92 493 46" fill="none" stroke="url(#routeGrad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 9"/>
-    <circle cx="54" cy="303" r="12" fill="#133b48" stroke="#60ddc6" stroke-width="3"/><circle cx="178" cy="174" r="12" fill="#133b48" stroke="#60ddc6" stroke-width="3"/><circle cx="331" cy="151" r="12" fill="#133b48" stroke="#60ddc6" stroke-width="3"/><circle cx="493" cy="46" r="13" fill="#60ddc6"/><circle cx="493" cy="46" r="5" fill="#102a43"/>
-    <g font-family="Arial,sans-serif"><rect x="23" y="331" width="127" height="38" rx="10" fill="#173b50" stroke="#2d5a6f"/><text x="36" y="347" fill="#8aa7bb" font-size="9">PICKUP</text><text x="36" y="361" fill="#fff" font-size="12" font-weight="700">Vadodara</text>
-    <rect x="114" y="113" width="123" height="43" rx="10" fill="#173b50" stroke="#2d5a6f"/><text x="127" y="129" fill="#8aa7bb" font-size="9">TRANSFER HUB</text><text x="127" y="145" fill="#fff" font-size="12" font-weight="700">Sort & dispatch</text>
-    <rect x="278" y="187" width="121" height="43" rx="10" fill="#173b50" stroke="#2d5a6f"/><text x="291" y="203" fill="#8aa7bb" font-size="9">CHECKPOINT</text><text x="291" y="219" fill="#fff" font-size="12" font-weight="700">Status verified</text>
-    <rect x="354" y="7" width="162" height="36" rx="10" fill="#d5f8f1"/><text x="368" y="22" fill="#276d67" font-size="9">DELIVERY POINT</text><text x="368" y="35" fill="#102a43" font-size="12" font-weight="700">Customer destination</text></g>
-   </svg>
-   <div class="visual-foot"><span><i class="dot teal"></i> Planned route</span><span><i class="dot blue"></i> Milestone checkpoints</span></div><p class="sample-label">Illustrative route graphic — not live GPS tracking.</p>
-  </div>
- </div>
- <div class="hero-metrics"><div><strong>One view</strong><span>Shipment status</span></div><div><strong>Clear actions</strong><span>Exception response</span></div><div><strong>Human-led</strong><span>Operational decisions</span></div></div>
-</section>
+  <a class="skip-link" href="#workspace">Skip to the LogiGenAI workspace</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="LogiGenAI home">
+      <span class="brand-mark" aria-hidden="true"><span>LG</span><i>✳</i></span>
+      <span class="brand-copy"><strong>LogiGenAI</strong><small>Logistics operations copilot</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#workspace">Assistant</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#safeguards">Safeguards</a>
+    </nav>
+    <div class="header-actions">
+      <span class="mode-pill"><span class="pulse-dot"></span> DEMO MODE</span>
+      <a class="header-link" href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Open Flask app <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-<section id="about" class="section light anchor">
- <div class="section-head split"><div><p class="eyebrow dark">ABOUT MOVENTRA</p><h2>Logistics that keeps<br><em>business moving.</em></h2></div><p class="intro">Moventra is a concept local logistics and delivery business designed around reliable handovers, shipment visibility and responsive service when everyday deliveries don't go to plan.</p></div>
- <div class="about-grid">
-  <article class="about-card dark-card"><span class="icon-box">▦</span><h3>What we do</h3><p>We coordinate local parcels, priority consignments and scheduled business deliveries. Our operating approach combines clear milestones with structured exception follow-up.</p></article>
-  <article class="about-card"><span class="icon-box">♙</span><h3>Who we serve</h3><p>Small and medium businesses, retailers, local distributors, e-commerce sellers and teams managing repeat delivery requirements.</p></article>
-  <article class="about-card"><span class="icon-box">⌖</span><h3>Service area</h3><p>Illustrative operating focus: Vadodara, Ahmedabad, Anand and Surat, Gujarat. Actual coverage would depend on operating capacity.</p></article>
- </div>
- <div class="value-strip"><div><span>01</span><div><strong>Visibility</strong><p>Understand the latest recorded milestone.</p></div></div><div><span>02</span><div><strong>Responsiveness</strong><p>Give teams a clear next action when a delivery is disrupted.</p></div></div><div><span>03</span><div><strong>Accountability</strong><p>Keep customer communications clear and verified.</p></div></div></div>
-</section>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> LEARNING BLOCK 1 · GENAI LOGISTICS PROTOTYPE</div>
+        <h1>From shipment exception<br>to <em>the next clear action.</em></h1>
+        <p class="hero-lead">LogiGenAI supports logistics teams with structured shipment analysis, documentation checks, exception handling and customer email drafts — using the details you provide.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#workspace">Try the assistant <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-secondary" href="#workflow">Explore the workflow</a>
+        </div>
+        <div class="hero-footnote"><span class="shield-icon" aria-hidden="true">✓</span> Operational decision support. Human verification remains essential.</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a shipment exception being converted into a structured action plan">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-kicker"><span class="tiny-square"></span> EXCEPTION → ACTION</div>
+        <div class="visual-card visual-input">
+          <div class="visual-card-head"><span class="mini-icon">↗</span><span>INPUT SCENARIO</span><span class="visual-tag">FCL EXPORT</span></div>
+          <b>Documentation received after cutoff</b>
+          <div class="visual-route"><span>Mundra</span><i>········→</i><span>Rotterdam</span></div>
+        </div>
+        <div class="connector"><span>AI / DEMO ENGINE</span><i></i><b>✳</b><i></i></div>
+        <div class="visual-card visual-output">
+          <div class="visual-card-head"><span class="mini-icon mini-lime">✓</span><span>STRUCTURED RESPONSE</span><span class="status-label">READY TO REVIEW</span></div>
+          <div class="output-line"><span class="line-number">01</span><span>Confirm the missed milestone</span></div>
+          <div class="output-line"><span class="line-number">02</span><span>Verify document and cargo status</span></div>
+          <div class="output-line"><span class="line-number">03</span><span>Confirm the next feasible movement</span></div>
+          <div class="visual-note"><span>!</span> Verify operational facts before acting.</div>
+        </div>
+        <div class="visual-stamp"><span>LOGISTICS</span><b>INTELLIGENCE</b><small>MADE ACTIONABLE</small></div>
+      </div>
+    </section>
 
-<section id="services" class="section white anchor">
- <div class="section-head"><p class="eyebrow dark">WHAT WE OFFER</p><h2>Services built around <em>your delivery day.</em></h2><p class="intro">A simple service menu for local and business logistics. Prices below are illustrative classroom values, not binding quotations.</p></div>
- <div class="service-grid">
-  <article class="service-card"><span class="service-icon">▰</span><p class="service-tag">EVERYDAY</p><h3>City Essentials</h3><p>Same-city parcel delivery for documents, samples and small consignments.</p><div class="price"><strong>₹150</strong><span>from / sample price</span></div><a class="text-link" href="#contact">Enquire about delivery <b>→</b></a></article>
-  <article class="service-card featured"><span class="ribbon">PRIORITY</span><span class="service-icon">◷</span><p class="service-tag">TIME-SENSITIVE</p><h3>Priority Dispatch</h3><p>Priority handling for consignments that need close milestone follow-up.</p><div class="price"><strong>₹300</strong><span>from / sample price</span></div><a class="text-link" href="#contact">Request priority service <b>→</b></a></article>
-  <article class="service-card"><span class="service-icon">▤</span><p class="service-tag">B2B LOGISTICS</p><h3>Business & Bulk</h3><p>Planned multi-drop and 10+ package delivery support for business accounts.</p><div class="price"><strong>₹1,000</strong><span>from / sample price</span></div><a class="text-link" href="#contact">Discuss a business account <b>→</b></a></article>
-  <article class="service-card"><span class="service-icon">↶</span><p class="service-tag">REVERSE LOGISTICS</p><h3>Return Pickup</h3><p>Coordinated pickup for returns, replacements and undelivered parcels.</p><div class="price"><strong>₹180</strong><span>from / sample price</span></div><a class="text-link" href="#contact">Arrange a pickup <b>→</b></a></article>
- </div>
- <p class="fine">All service prices are fictional examples for the ITBT exercise. Final rates depend on distance, size, weight and service conditions.</p>
-</section>
+    <section class="metric-strip section-wrap" id="overview" aria-label="Prototype capability overview">
+      <div class="metric-intro"><span class="section-index">01 / OVERVIEW</span><h2>Built around the<br>work, not the noise.</h2><p>Core functions from the LogiGenAI prototype, not freight-forwarding service listings.</p></div>
+      <div class="metrics-grid">
+        <article class="metric-card"><div class="metric-symbol">↗</div><strong>4</strong><span>Operational modules</span><small>Analysis · Docs · Exceptions · Email</small></article>
+        <article class="metric-card"><div class="metric-symbol">▤</div><strong>4</strong><span>Ready-made scenarios</span><small>Import and export examples</small></article>
+        <article class="metric-card"><div class="metric-symbol">✓</div><strong>5</strong><span>Evaluation criteria</span><small>Includes human verification</small></article>
+        <article class="metric-card metric-mode"><div class="metric-symbol">✳</div><strong>Demo</strong><span>Response engine</span><small>Simulated outputs · no API charge</small></article>
+      </div>
+    </section>
 
-<section id="dashboard" class="section dashboard anchor">
- <div class="section-head dash-head"><div><p class="eyebrow">OPERATIONS OVERVIEW</p><h2>A clearer view of <em>every delivery.</em></h2><p class="intro">A manager's snapshot of shipment activity, delivery performance and exceptions that need attention.</p></div><span class="demo-pill"><i class="pulse"></i> CLASSROOM DEMO DATA</span></div>
- <div class="kpi-grid">
-  <article class="kpi"><span>Total shipments</span><strong>248</strong><small class="up">↑ 8.2% vs prior period</small><b>↗</b></article>
-  <article class="kpi"><span>Delivered</span><strong>182</strong><small>73.4% of all records</small><b>✓</b></article>
-  <article class="kpi"><span>In transit</span><strong>41</strong><small>Active consignments</small><b>↔</b></article>
-  <article class="kpi"><span>Open exceptions</span><strong>12</strong><small class="warn">Requires follow-up</small><b class="orange">!</b></article>
-  <article class="kpi"><span>On-time delivery</span><strong>92.4<small>%</small></strong><small class="up">Sample service metric</small><b>◎</b></article>
-  <article class="kpi"><span>Customer rating</span><strong>4.7<small>/5</small></strong><small>Illustrative feedback score</small><b>☆</b></article>
- </div>
- <div class="dash-panels">
-  <article class="panel"><div class="panel-title"><div><p class="eyebrow dark">SHIPMENT MIX</p><h3>Delivery status overview</h3></div><span class="chip">248 records</span></div>
-   <div class="legend"><span><i class="dot teal"></i>Delivered</span><span><i class="dot blue"></i>In transit</span><span><i class="dot orange"></i>Exception</span></div>
-   <div class="bars" role="img" aria-label="Sample status chart: delivered 182, in transit 41, exceptions 12, other or pending 13">
-    <div class="bar-row"><span>Delivered</span><div><i class="bar delivered" style="width:73.4%"></i></div><b>182</b></div>
-    <div class="bar-row"><span>In transit</span><div><i class="bar transit" style="width:16.5%"></i></div><b>41</b></div>
-    <div class="bar-row"><span>Exceptions</span><div><i class="bar exception" style="width:4.8%"></i></div><b>12</b></div>
-    <div class="bar-row"><span>Other / pending</span><div><i class="bar pending" style="width:5.3%"></i></div><b>13</b></div>
-   </div><p class="fine">Sample figures are illustrative. Status counts add up to 248; the other KPIs are separate sample metrics.</p>
-  </article>
-  <article class="panel"><div class="panel-title"><div><p class="eyebrow dark">NEEDS ATTENTION</p><h3>Priority exceptions</h3></div><span class="chip">3 examples</span></div>
-   <div class="priority-list">
-    <div><span class="priority high">!</span><section><strong>Failed delivery attempt</strong><p>MVT-1044 · Confirm recipient availability</p></section><b>High</b></div>
-    <div><span class="priority medium">↻</span><section><strong>Documentation incomplete</strong><p>MVT-1032 · Request missing details</p></section><b>Medium</b></div>
-    <div><span class="priority medium">◷</span><section><strong>Pickup milestone missed</strong><p>MVT-1051 · Check dispatch readiness</p></section><b>Medium</b></div>
-   </div><a class="text-link full-link" href="#logigenai">Open LogiGenAI recovery tools <b>→</b></a>
-  </article>
- </div>
- <p class="dash-disclaimer"><strong>Data notice:</strong> all records and metrics are synthetic classroom examples. This dashboard is not connected to a live transport management system.</p>
-</section>
+    <section class="workspace-section section-wrap" id="workspace">
+      <div class="section-heading">
+        <div><span class="section-index">02 / ASSISTANT WORKSPACE</span><h2>Give the situation. Get a structured response.</h2></div>
+        <div class="workspace-hint"><span class="pulse-dot"></span> Your inputs stay in this browser demo.</div>
+      </div>
+      <div class="scenario-panel panel">
+        <div class="scenario-panel-title"><div><span class="panel-step">A</span><div><h3>Quick scenarios</h3><p>Load a classroom demonstration case.</p></div></div><button class="btn-text" id="clearBtn" type="button">Clear fields ↺</button></div>
+        <div class="scenario-grid">
+          <button class="scenario-card" type="button" data-preset="0"><span class="scenario-number">SCENARIO 01</span><strong>Mundra <i>→</i> Rotterdam</strong><small>FCL Export · Automotive Parts</small><span class="scenario-issue">Documentation cutoff</span></button>
+          <button class="scenario-card" type="button" data-preset="1"><span class="scenario-number">SCENARIO 02</span><strong>Nhava Sheva <i>→</i> Hamburg</strong><small>LCL Export · Textile Samples</small><span class="scenario-issue">Missed consolidation cutoff</span></button>
+          <button class="scenario-card" type="button" data-preset="2"><span class="scenario-number">SCENARIO 03</span><strong>Jebel Ali <i>→</i> Mundra</strong><small>FCL Import · Industrial Machinery</small><span class="scenario-issue">Arrival delay</span></button>
+          <button class="scenario-card" type="button" data-preset="3"><span class="scenario-number">SCENARIO 04</span><strong>Singapore <i>→</i> Chennai</strong><small>LCL Import · Electronic Components</small><span class="scenario-issue">Incomplete documents</span></button>
+        </div>
+      </div>
 
-<section id="logigenai" class="section ai-section anchor">
- <div class="ai-grid">
-  <div class="ai-copy"><p class="eyebrow"><span class="ai-star">✦</span> MOVENTRA TECHNOLOGY</p><h2>Meet <em>LogiGenAI.</em></h2><p class="intro">Our logistics-assistance concept helps an operations team turn a delivery exception into a structured next-step plan and a clear customer update.</p>
-   <div class="ai-features"><div><span>01</span><section><strong>Classify the issue</strong><p>Capture the situation and what still needs confirmation.</p></section></div><div><span>02</span><section><strong>Plan the recovery</strong><p>Display practical checks and escalation triggers.</p></section></div><div><span>03</span><section><strong>Communicate clearly</strong><p>Draft a neutral customer message without promising an unconfirmed delivery time.</p></section></div></div>
-   <div class="notice"><b>i</b><p><strong>Prototype notice</strong><br>This GitHub Pages version uses rule-based sample responses. It does not call a live AI model or use live shipment data.</p></div>
-  </div>
-  <div class="recovery-panel">
-   <div class="recovery-title"><span class="mini-logo">✦</span><div><strong>Exception Recovery Assistant</strong><small>Demo workspace · human review required</small></div><span class="demo-tag">DEMO</span></div>
-   <label for="exceptionType">What went wrong?</label><select id="exceptionType"><option value="failed_delivery">Delivery attempt failed</option><option value="documents">Shipment documents incomplete</option><option value="pickup_cutoff">Pickup or cutoff was missed</option><option value="vehicle_delay">Vehicle or route delay</option><option value="address_issue">Address or recipient details unclear</option></select>
-   <label for="exceptionId">Shipment ID (optional)</label><input id="exceptionId" maxlength="24" placeholder="e.g. MVT-1044">
-   <button class="button primary full-button" id="recoverBtn">Generate recovery plan <span>→</span></button>
-   <div id="recoveryOutput" class="recovery-output" aria-live="polite"><div class="placeholder"><span>✦</span><p>Choose an exception type and generate a sample recovery plan.</p></div></div>
-   <p class="human-review">✓ Review all actions before use. This demo does not update a real shipment.</p>
-  </div>
- </div>
-</section>
+      <div class="workspace-grid">
+        <section class="panel input-panel" aria-labelledby="shipment-form-title">
+          <div class="panel-title"><div class="panel-icon">01</div><div><h3 id="shipment-form-title">Shipment information</h3><p>Enter or edit the operational scenario.</p></div><span class="ready-chip"><span></span> READY</span></div>
+          <form id="shipmentForm">
+            <label for="shipment_type">Shipment type<select id="shipment_type" name="shipment_type"><option>FCL Export</option><option>LCL Export</option><option>FCL Import</option><option>LCL Import</option></select></label>
+            <div class="form-two">
+              <label for="pol">Port of loading (POL)<input id="pol" name="pol" value="Mundra" placeholder="e.g., Mundra" autocomplete="off"></label>
+              <label for="pod">Port of discharge (POD)<input id="pod" name="pod" value="Rotterdam" placeholder="e.g., Rotterdam" autocomplete="off"></label>
+            </div>
+            <label for="cargo">Cargo description<input id="cargo" name="cargo" value="Automotive Parts" placeholder="Describe the cargo" autocomplete="off"></label>
+            <div class="form-two">
+              <label for="weight">Weight<input id="weight" name="weight" value="18000 kg" placeholder="e.g., 18000 kg" autocomplete="off"></label>
+              <label for="cbm">Volume (CBM)<input id="cbm" name="cbm" value="32" placeholder="e.g., 32" inputmode="decimal" autocomplete="off"></label>
+            </div>
+            <label for="issue">Current issue<textarea id="issue" name="issue" rows="3" placeholder="Describe the exception or concern">Documentation received after cutoff</textarea></label>
+            <div class="module-label"><span class="panel-step">B</span><div><b>Choose a task</b><small>Run one module using the supplied information.</small></div></div>
+            <div class="task-buttons">
+              <button class="task-button" type="button" data-task="shipment"><span class="task-icon">↗</span><span><b>Analyze shipment</b><small>Summary, risks and next actions</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="docs"><span class="task-icon">▤</span><span><b>Documentation checks</b><small>Review a practical checklist</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="exception"><span class="task-icon">⚑</span><span><b>Exception assistant</b><small>Causes, recovery and escalation</small></span><i>→</i></button>
+              <button class="task-button" type="button" data-task="email"><span class="task-icon">✉</span><span><b>Generate customer email</b><small>Neutral, professional wording</small></span><i>→</i></button>
+            </div>
+            <p class="form-footnote">This GitHub Pages version runs a deterministic demo engine. For the existing Flask application, use <a href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Open LogiGenAI ↗</a>.</p>
+          </form>
+        </section>
 
-<section id="tracking" class="section light anchor">
- <div class="section-head"><p class="eyebrow dark">SHIPMENT VISIBILITY</p><h2>Search a shipment.<br><em>Know what to do next.</em></h2><p class="intro">Try a sample shipment ID: MVT-1025, MVT-1032 or MVT-1044.</p></div>
- <div class="tracking-card">
-  <form id="trackingForm" class="tracking-form"><label class="sr-only" for="trackingId">Shipment ID</label><div class="search-field"><span>⌕</span><input id="trackingId" type="search" placeholder="Enter shipment ID, e.g. MVT-1025" required autocomplete="off"></div><button type="submit" class="button primary">Search shipment <span>→</span></button></form>
-  <div id="trackingResult" aria-live="polite" class="tracking-result"><div class="tracking-empty"><span>↗</span><div><strong>Shipment details will appear here</strong><p>Search a sample ID to view its route, milestone and demo status.</p></div></div></div>
-  <div class="sample-records"><span>TRY A SAMPLE</span><button type="button" data-track="MVT-1025">MVT-1025</button><button type="button" data-track="MVT-1032">MVT-1032</button><button type="button" data-track="MVT-1044">MVT-1044</button></div>
-  <p class="fine">Sample shipment records only. No real-time location, carrier feed or ETA service is connected.</p>
- </div>
-</section>
+        <section class="panel result-panel" aria-labelledby="result-title" aria-live="polite">
+          <div class="result-head"><div class="panel-title"><div class="panel-icon panel-icon-lime">02</div><div><h3 id="result-title">Structured output</h3><p id="resultSubtitle">Choose a task to generate a response.</p></div></div><span class="result-mode" id="resultMode">WAITING</span></div>
+          <div id="output" class="output-body">
+            <div class="empty-state"><div class="empty-graphic"><span>✳</span></div><h4>Your analysis starts here.</h4><p>Select one of the four modules to see a structured response based on the scenario on the left.</p><div class="empty-points"><span>✓ Operational context</span><span>✓ Action-oriented output</span><span>✓ Verification prompts</span></div></div>
+          </div>
+          <div class="result-disclaimer"><span>!</span><p><b>Review before use.</b> Outputs are decision support, not confirmation of live shipment facts, schedules or legal requirements.</p></div>
+        </section>
+      </div>
+    </section>
 
-<section id="contact" class="section contact anchor">
- <div class="contact-grid">
-  <div><p class="eyebrow">LET'S MOVE BUSINESS FORWARD</p><h2>Need a delivery partner?<br><em>Let's talk logistics.</em></h2><p class="intro">Tell us about your delivery needs. This enquiry form demonstrates the customer journey for the classroom prototype.</p>
-   <div class="contact-methods"><a href="mailto:moventra.demo@example.com"><span class="contact-icon">✉</span><span><small>DEMO EMAIL LINK</small><strong>moventra.demo@example.com</strong></span><b>↗</b></a><a href="https://www.google.com/maps/search/?api=1&query=Vadodara%2C%20Gujarat%2C%20India" target="_blank" rel="noopener noreferrer"><span class="contact-icon">⌖</span><span><small>ILLUSTRATIVE SERVICE BASE</small><strong>Vadodara, Gujarat, India</strong></span><b>↗</b></a></div>
-   <p class="fine">Moventra is a fictional concept brand for an academic exercise. Replace demo contact details before using this site for a real business.</p>
-  </div>
-  <form id="enquiryForm" class="enquiry-form"><div class="form-heading"><p class="eyebrow dark">CUSTOMER ENQUIRY</p><h3>How can we help?</h3><p>Fields marked * are required.</p></div>
-   <div class="form-row"><div><label for="customerName">Your name *</label><input id="customerName" name="name" required maxlength="80" placeholder="Full name"></div><div><label for="customerEmail">Work email *</label><input id="customerEmail" name="email" type="email" required maxlength="120" placeholder="you@company.com"></div></div>
-   <label for="serviceInterest">Service of interest</label><select id="serviceInterest" name="service"><option>City Essentials</option><option>Priority Dispatch</option><option>Business & Bulk</option><option>Return Pickup</option><option>General enquiry</option></select>
-   <label for="enquiryMessage">Tell us about your requirements *</label><textarea id="enquiryMessage" name="message" rows="4" required maxlength="1000" placeholder="Pickup and delivery needs, frequency, shipment type…"></textarea>
-   <button class="button primary full-button" type="submit">Submit demo enquiry <span>→</span></button><p id="formFeedback" class="form-feedback" aria-live="polite"></p><p class="fine">Demo only: this form validates inputs in your browser but does not send or store them.</p>
-  </form>
- </div>
-</section>
+    <section class="capabilities-section section-wrap" id="capabilities">
+      <div class="section-heading"><div><span class="section-index">03 / CAPABILITY MAP</span><h2>One input. Four operational workflows.</h2></div><p class="section-side-copy">This map describes features available in the prototype — it is not an accuracy score or live logistics performance dashboard.</p></div>
+      <div class="capability-layout panel">
+        <div class="capability-intro"><span class="capability-mark">✳</span><h3>Designed for exception-aware operations.</h3><p>Each module has a defined output, while unknown shipment facts remain items to verify instead of being invented.</p><a href="#workspace" class="inline-link">Open the assistant <span>↗</span></a></div>
+        <div class="capability-chart" role="img" aria-label="The prototype contains four available operational modules: shipment analysis, documentation checks, exception management and customer email drafting.">
+          <div class="chart-head"><b>Operational module availability</b><span>PROTOTYPE SCOPE</span></div>
+          <div class="bar-row"><div><span>Shipment analysis</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Documentation checks</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Exception management</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="bar-row"><div><span>Customer email drafting</span><b>Available</b></div><div class="bar-track"><span style="width:100%"></span></div></div>
+          <div class="chart-footnote"><span>●</span> Feature availability only — no accuracy or productivity claim is implied.</div>
+        </div>
+      </div>
+    </section>
 
-<section class="resource-strip"><div><p class="eyebrow dark">USEFUL LOGISTICS LINKS</p><h3>Resources for informed operations.</h3></div><a href="https://www.indiapost.gov.in/" target="_blank" rel="noopener noreferrer">India Post <span>↗</span></a><a href="https://morth.nic.in/" target="_blank" rel="noopener noreferrer">MoRTH <span>↗</span></a><a href="https://parivahan.gov.in/" target="_blank" rel="noopener noreferrer">Parivahan <span>↗</span></a><a href="https://www.google.com/maps/search/?api=1&query=logistics+services+Vadodara" target="_blank" rel="noopener noreferrer">Logistics in Vadodara <span>↗</span></a></section>
-</main>
-<footer class="site-footer"><div class="footer-main"><a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 31.5 18.6 10l7.2 13.2 4.5-8.1L41 36H18.4l4.2-7.6-4.1-7.5-6.1 10.6Z" fill="currentColor"/><path d="M8 38h31" stroke="#58d6c0" stroke-width="3.2" stroke-linecap="round"/></svg></span><span class="brand-text"><strong>MOVENTRA</strong><small>LOGISTICS & DELIVERY</small></span></a><p>Delivery operations designed around visibility, practical recovery and responsible communication.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> Moventra Logistics — academic concept website.</span><span>LogiGenAI is a prototype feature. All shipment examples and dashboard metrics are synthetic.</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+    <section class="workflow-section section-wrap" id="workflow">
+      <div class="section-heading"><div><span class="section-index">04 / SYSTEM WORKFLOW</span><h2>Structured by design. Reviewed by a person.</h2></div></div>
+      <div class="workflow-steps">
+        <article class="workflow-step"><span class="workflow-num">01</span><div class="workflow-icon">⌨</div><h3>User input</h3><p>Shipment type, route, cargo, weight, volume and current issue.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step"><span class="workflow-num">02</span><div class="workflow-icon">▤</div><h3>Data structuring</h3><p>The scenario is organized for the selected logistics task.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step"><span class="workflow-num">03</span><div class="workflow-icon">✳</div><h3>Task engine</h3><p>A task-specific response is built by the demo engine.</p></article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article class="workflow-step workflow-step-final"><span class="workflow-num">04</span><div class="workflow-icon">✓</div><h3>Human review</h3><p>Verify facts, confirm operational options and approve communications.</p></article>
+      </div>
+    </section>
+
+    <section class="evaluation-section section-wrap" id="evaluation">
+      <div class="section-heading"><div><span class="section-index">05 / QUALITY REVIEW</span><h2>Check the output before trusting it.</h2><p class="section-lead">Run the original prototype evaluation rubric to review how the response is intended to behave.</p></div><button class="btn btn-dark" id="evalBtn" type="button">Run evaluation <span aria-hidden="true">→</span></button></div>
+      <div class="evaluation-layout">
+        <div class="evaluation-list panel" id="evaluationOutput">
+          <div class="evaluation-static-row"><span class="evaluation-check">01</span><div><b>Factuality</b><small>Uses user-entered shipment facts and avoids invented schedules.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">02</span><div><b>Relevance</b><small>Output stays focused on logistics operations.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">03</span><div><b>Completeness</b><small>Task-specific output contains the expected sections.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">04</span><div><b>Assumption control</b><small>Unknown carrier or customs details are flagged for verification.</small></div><span class="criteria-label">CHECK</span></div>
+          <div class="evaluation-static-row"><span class="evaluation-check">05</span><div><b>Human verification</b><small>An operator must validate the output before operational use.</small></div><span class="criteria-label criteria-human">REQUIRED</span></div>
+        </div>
+        <aside class="evaluation-aside"><span class="aside-eyebrow">EVALUATION NOTE</span><h3>A rubric, not a benchmark.</h3><p>The criteria describe what should be reviewed. They do not represent a statistically measured accuracy rate or proof of operational performance.</p><div class="eval-badge"><span>✓</span> <div><b>Human check remains mandatory</b><small>Especially for carrier schedules, rates, customs, contracts and cargo status.</small></div></div></aside>
+      </div>
+    </section>
+
+    <section class="safeguards-section section-wrap" id="safeguards">
+      <div class="safeguard-banner"><div class="safeguard-icon">!</div><div><span class="section-index">06 / SCOPE & SAFEGUARDS</span><h2>Useful assistance. No invented certainty.</h2><p>LogiGenAI is an academic decision-support prototype. Its demonstration outputs are simulated and must not be treated as verified operational advice.</p></div></div>
+      <div class="safeguard-grid">
+        <article><span>01</span><h3>Use supplied facts</h3><p>Outputs are grounded in scenario details entered by the user. Missing information should be checked, not assumed.</p></article>
+        <article><span>02</span><h3>Verify documents and rules</h3><p>The documentation list is an operational prompt, not a definitive legal, customs or regulatory checklist.</p></article>
+        <article><span>03</span><h3>Confirm before communicating</h3><p>Check live shipment milestones, carrier availability, contractual commitments and customer-specific requirements before action.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><span>LG</span><i>✳</i></span><span class="brand-copy"><strong>LogiGenAI</strong><small>Logistics operations copilot</small></span></a>
+    <p>Academic prototype · Demo outputs are simulated · Human verification required</p>
+    <div><a href="https://github.com/azharmohammad950-star/logigenai-logistics-assistant" target="_blank" rel="noopener">GitHub repository ↗</a><a href="https://logigenai-logistics-assistant.onrender.com" target="_blank" rel="noopener">Existing Flask app ↗</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
